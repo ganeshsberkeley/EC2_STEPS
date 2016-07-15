@@ -27,6 +27,7 @@ Do git commit -m "Message"
 Do git push -u origin master 
 
 # EC2_STEPS
+===============
 
 Steps to Create a new EC2 for labs
 
@@ -50,7 +51,7 @@ wget https://s3.amazonaws.com/ucbdatasciencew205/setup_spark.sh
 bash ./setup_spark.sh
 /data/start_metastore.sh
 
-# TO start spark-sql
+# To start spark-sql
 /data/spark15/bin/spark-sql
 
 # To start hive
