@@ -107,3 +107,4 @@ pip install psycopg2
 
 sparse quickstart EX2Tweetwordcount
 
+git clone https://github.com/UC-Berkeley-I-School/w205-summer-16-labs-exercises
