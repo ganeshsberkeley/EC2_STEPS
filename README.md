@@ -104,6 +104,7 @@ sparse quickstart wordcount
 Exercice-2
 ----------
 pip install psycopg2
+pip install tweepy
 
 sparse quickstart EX2Tweetwordcount
 
