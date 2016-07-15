@@ -46,6 +46,7 @@ su - w205
 cd /data
 
 wget https://s3.amazonaws.com/ucbdatasciencew205/setup_spark.sh
+
 bash ./setup_spark.sh
 /data/start_metastore.sh
 
@@ -98,4 +99,11 @@ lein version
 pip install streamparse
 
 sparse quickstart wordcount
+
+
+Exercice-2
+----------
+pip install psycopg2
+
+sparse quickstart EX2Tweetwordcount
 
