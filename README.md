@@ -26,10 +26,15 @@ Process to check in files
 Do the following
 
 git status 
+
 	to see what are the files that need to be pushed
+
 git add <file> 
+
 	for all the files that needs to be checked in
+
 git commit -m "Message"
+
 git push -u origin master 
 
 # EC2_STEPS
