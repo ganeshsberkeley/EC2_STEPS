@@ -62,6 +62,7 @@ cd /data
 wget https://s3.amazonaws.com/ucbdatasciencew205/setup_spark.sh
 
 bash ./setup_spark.sh
+
 /data/start_metastore.sh
 
 # To start spark-sql
