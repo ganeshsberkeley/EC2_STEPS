@@ -55,6 +55,7 @@ chmod 777 setup_ucb_complete_plus_postgres.sh
 ./setup_ucb_complete_plus_postgres.sh /dev/xvdf
 
 /root/start-hadoop.sh
+
 /data/start_postgres.sh
 
 su - w205
@@ -74,7 +75,7 @@ bash ./setup_spark.sh
 hive
 
 # Postgress
-psql --U postgres
+psql -U postgres
 
 # Strom installation (need to be a root)
 storm version
