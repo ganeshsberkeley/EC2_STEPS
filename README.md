@@ -124,6 +124,6 @@ Exercice-2
 pip install psycopg2
 pip install tweepy
 
-sparse quickstart EX2Tweetwordcount
+sparse quickstart tweetwordcount
 
 git clone https://github.com/UC-Berkeley-I-School/w205-summer-16-labs-exercises
