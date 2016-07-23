@@ -15,7 +15,6 @@ class StdOutListener(StreamListener):
     def __init__(self,timer):
         self.inc = 0
         StreamListener.__init__(self)
-        self.tupplesmine = "Hi" "World" 	
         # report the start of data collection...
         print "Gathering data at %s"%(str(ctime()))
         self.startTime = time()
