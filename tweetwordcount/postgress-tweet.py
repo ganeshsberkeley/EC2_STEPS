@@ -1,5 +1,11 @@
-#!/usr/bin/python
+#!/usr/bin/python2.4
+#
+# Small script to show PostgreSQL and Pyscopg together
+#
 import psycopg2
 
-conn = psycopg2.connect(database="Tcount", user="root", password="pass", host="54.198.167.194", port="8080")
+#try:
+conn = psycopg2.connect(database="Tcount", user="postgres", password="pass", host="54.89.138.171", port="5432")
 print "Opened TCount Successfully"
+#except:
+#    print "I am unable to connect to the database"
