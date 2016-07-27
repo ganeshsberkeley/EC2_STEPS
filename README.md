@@ -123,6 +123,7 @@ Exercice-2
 ----------
 pip install psycopg2
 pip install tweepy
+sudo pip install redis
 
 sparse quickstart tweetwordcount
 
