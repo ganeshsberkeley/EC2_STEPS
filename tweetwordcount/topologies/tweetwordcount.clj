@@ -9,19 +9,19 @@
           	options
           	"spouts.tweets.Tweets"
           	["tweet"]
-          	:p 3
+          ;;	:p 3
         	)
     	"tweet-spout2" (python-spout-spec
           	options
           	"spouts.tweets.Tweets"
           	["tweet"]
-          	:p 3
+          ;;	:p 3
         	)
     	"tweet-spout3" (python-spout-spec
         	options
           	"spouts.tweets.Tweets"
           	["tweet"]
-          	:p 3
+          ;;	:p 3
           	)
     	}
     	;; bolt configuration
@@ -31,21 +31,21 @@
           	{"tweet-spout1" :shuffle}
           	"bolts.parse.ParseTweet"
           	["word"]
-          	:p 3
+         ;; 	:p 3
           	)
     	"parse-tweet-bolt2" (python-bolt-spec
           	options
           	{"tweet-spout2" :shuffle}
           	"bolts.parse.ParseTweet"
           	["word"]
-          	:p 3
+         ;; 	:p 3
           	)
     	"parse-tweet-bolt3" (python-bolt-spec
           	options
           	{"tweet-spout3" :shuffle}
           	"bolts.parse.ParseTweet"
           	["word"]
-          	:p 3
+        ;;  	:p 3
           	)
      	"count-bolt1" (python-bolt-spec
           	options
@@ -53,14 +53,14 @@
           	"parse-tweet-bolt2" ["word"]}
           	"bolts.Wordcount.WordCounter"
           	["word" "count"]
-          	:p 3
+       ;;   	:p 3
           	)
      	"count-bolt2" (python-bolt-spec
           	options
-          	{"parse-tweet-bolt3" ["word"]}
+         	{"parse-tweet-bolt3" ["word"]}
           	"bolts.Wordcount.WordCounter"
           	["word" "count"]
-          	:p 3
+      ;;    	:p 3
           	)
 	}
 ]
