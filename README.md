@@ -128,3 +128,53 @@ sudo pip install redis
 sparse quickstart tweetwordcount
 
 git clone https://github.com/UC-Berkeley-I-School/w205-summer-16-labs-exercises
+
+
+Steps
+-----
+psql --username=postgres
+
+Now within postgres do the following to create the tcount database
+
+CREATE USER w205 WITH PASSWORD 'postgres';
+ DROP DATABASE Tcount;
+ CREATE DATABASE Tcount;
+ ALTER DATABASE Tcount OWNER TO w205;
+ GRANT ALL ON DATABASE Tcount TO w205;
+
+Quit out of posgres using 
+\q
+
+and log back in using the following command to create the tweetwordcount table
+
+psql --host=localhost --username=postgres --dbname=tcount
+
+
+Type the following command to create the table
+
+DROP TABLE IF EXISTS Tweetwordcount ;
+CREATE TABLE Tweetwordcount (word TEXT PRIMARY KEY     NOT NULL, count INT     NOT NULL);
+
+
+Quit out of postgres by typing
+\q
+
+
+Now that data base and table has been created execute the following command to start capturing streaming data
+sparse run 
+
+Wait for a few minutes for the data to cpatured and written to posgres data base
+
+Press CTRL-C to quit
+
+How to run post-processing Scripts?
+-----------------------------------
+
+There are two scripts that can be run to gather some statistics
+1.  finalresults.py -> It takes no or 1 input parameter. The process to run it is python finalresults.py or python finalresults.py <variable>
+When no parameter is entered, the script will return all the words with there occurances sorted in alphabetical order
+If a parameter is entered, the script will return the number of occurances of that particular variable
+2.  histogram.py -> It takes no or 1 or 2 input parameters. The process to run it is python histogram.py or python histogram.py k1 or python histogram.py k1 k2
+When no parameter is entered, the script will return all the words with there occurances
+When k1 is alone entered, the script will return all the words that have a minimum of k1 ocurances
+When k1 and k2 are entered, the script will return all the words that have a minimum of k1 ocurances and a maximum of k2 occurances
