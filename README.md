@@ -157,11 +157,11 @@ Before exectuing the exercise-2, please look at the course PDF for ex2 to setup 
 
 After setting up the accounts, please so the following in the tweetwordcount folder
 
-1.  Login to postgres first using the following command
+1.   Login to postgres first using the following command
 
 psql --username=postgres
 
-2.  Now within postgres do the following to create the tcount database
+2.   Now within postgres do the following to create the tcount database
 
 CREATE USER w205 WITH PASSWORD 'postgres';
 
@@ -177,7 +177,7 @@ Quit out of posgres using
 
 \q
 
-3.  Log back in using the following command to create the tweetwordcount table
+3.   Log back in using the following command to create the tweetwordcount table
 
 psql --host=localhost --username=postgres --dbname=tcount
 
@@ -207,13 +207,13 @@ How to run post-processing Scripts?
 
 There are two scripts that can be run to gather some statistics
 
-1.  finalresults.py -> It takes no or 1 input parameter. The process to run it is python finalresults.py or python finalresults.py <variable>
+1.   finalresults.py -> It takes no or 1 input parameter. The process to run it is python finalresults.py or python finalresults.py <variable>
 
 When no parameter is entered, the script will return all the words with there occurances sorted in alphabetical order
 
 If a parameter is entered, the script will return the number of occurances of that particular variable
 
-2.  histogram.py -> It takes no or 1 or 2 input parameters. The process to run it is python histogram.py or python histogram.py k1 or python histogram.py k1 k2
+2.   histogram.py -> It takes no or 1 or 2 input parameters. The process to run it is python histogram.py or python histogram.py k1 or python histogram.py k1 k2
 
 When no parameter is entered, the script will return all the words with there occurances
 
