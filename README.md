@@ -31,7 +31,7 @@ Once the git hub is cloned you will see the following directories
 
 2.  SCREENSHOTS -> PNG files of screenshots of the application run
 
-3.  docs -> EX2 documents that explains setup to done for creatng twitter account and application
+3.  docs -> EX2 documents that explains setup to done for creatng twitter account and application as well as architecture
 
 
 
@@ -190,6 +190,7 @@ CREATE TABLE Tweetwordcount (word TEXT PRIMARY KEY NOT NULL, count INT NOT NULL)
 
 
 Quit out of postgres by typing
+
 \q
 
 
